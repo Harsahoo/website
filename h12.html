@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Sahu - Data Analyst</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"> <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Animate.css for animations -->
+    <style>
+        /* Additional styles for enhanced visual appeal */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .button-more {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button-more:hover {
+            background-color: #0056b3;
+        }
+        /* Styling for chat bot */
+        .chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .chat-container:hover {
+            transform: translateY(-10px);
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+        .chat-box {
+            max-height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+        }
+        #user-input {
+            flex-grow: 1;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+        #send-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+        #send-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <div class="container">
+            <h1>Harsh Sahu</h1>
+            <p>Data Analyst | Educator | Innovator</p>
+            <!-- Social media links -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/harshsahu" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/harshsahu" target="_blank"><i class="fab fa-twitter"></i></a>
+                <!-- Add more social media icons and links as needed -->
+            </div>
+        </div>
+    </header>
+
+    <nav class="animate__animated animate__fadeInDown">
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li> <!-- Link to the blog page -->
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="animate__animated animate__fadeInUp">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hi, I'm Harsh Sahu, a passionate data analyst with a keen interest in uncovering insights from complex datasets. I specialize in data visualization, machine learning, and predictive analytics. With years of experience in the industry, I'm dedicated to helping others learn and grow in the field of data science.</p>
+                <button class="button-more">More Details</button>
+            </div>
+        </section>
+
+        <section id="courses" class="animate__animated animate__fadeInUp">
+            <div class="container">
+                <h2>Courses</h2>
+                <p>Explore my range of courses designed to help you master data science skills:</p>
+                <ul>
+                    <li>Data Visualization Fundamentals</li>
+                    <li>Machine Learning Basics</li>
+                    <li>Advanced Predictive Analytics</li>
+                </ul>
+                <button class="button-more">More Details</button>
+            </div>
+        </section>
+
+        <section id="projects" class="animate__animated animate__fadeInUp">
+            <div class="container">
+                <h2>Projects</h2>
+                <p>Check out some of my recent projects:</p>
+                <div>
+                    <h3>Project 1: Sentiment Analysis of Customer Reviews</h3>
+                    <p>Project Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat est. Proin eget ipsum vestibulum, condimentum orci sed, tincidunt magna.</p>
+                    <img src="project1_dashboard.png" alt="Project 1 Dashboard" width="400">
+                </div>
+                <div>
+                    <h3>Project 2: Stock Price Prediction Using Machine Learning</h3>
+                    <p>Project Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat est. Proin eget ipsum vestibulum, condimentum orci sed, tincidunt magna.</p>
+                    <img src="project2_dashboard.png" alt="Project 2 Dashboard" width="400">
+                </div>
+                <div>
+                    <h3>Project 3: Customer Segmentation for Marketing Campaigns</h3>
+                    <p>Project Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat est. Proin eget ipsum vestibulum, condimentum orci sed, tincidunt magna.</p>
+                    <img src="project3_dashboard.png" alt="Project 3 Dashboard" width="400">
+                </div>
+                <a href="courses.html" class="button-more">More Details</a> <!-- Link to courses.html -->
+            </div>
+        </section>
+
+        <section id="contact" class="animate__animated animate__fadeInUp">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Ready to start your data science journey? Reach out to me today!</p>
+                <form id="contact-form">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="animate__animated animate__fadeInUp">
+        <div class="container">
+            <p>&copy; 2024 Harsh Sahu - All rights reserved</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> <!-- WOW.js for scroll animations -->
+    <script>
+        new WOW().init(); // Initialize WOW.js
+    </script>
+</body>
+</html>
